@@ -63,6 +63,14 @@ body{
 	padding: 2em;
 }
 
+p .logo{
+	display: inline;
+}
+
+header{
+	background-color: #F08080;
+}
+
 
 /*espacio centrado principal*/
 
@@ -78,6 +86,8 @@ textarea{
 	border-radius: 15px;
 	border-width: 3px;
 	border-color: #C5A59B;
+	width: ;
+	height: ;
 }
 
 /*user ingresa texto*/
@@ -87,7 +97,10 @@ textarea{
 	display: left;
 }
 
-
+/*acomodar textarea a la izq*/
+.campitoTexto{
+	display: block;
+}
 /*user percibe texto*/
 
 
@@ -134,4 +147,10 @@ main .botones{
 
 .desencriptar:hover {
     transform: scale(1.1);
+}
+
+/*rodapie con mi informacion*/
+
+footer{
+	background-color: black;
 }
