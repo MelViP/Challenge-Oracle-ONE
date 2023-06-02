@@ -16,17 +16,22 @@
         </header>
 
         <main>
-            <section class="campitoTexto"> <!--Espacio para ingresar texto por el usuario-->
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese texto"></textarea>
-            </section>
+            <div class="campitoTexto">
+                <!--Espacio para ingresar texto por el usuario-->
+                <textarea class="userInput" id="" cols="30" rows="10" placeholder="Ingrese texto"></textarea>
+            </div>
 
-            <section class="campitoResultado"> <!--espacio del resultado encriptado o desencriptado-->
-                <img src="imagenes/Muñeco.png" id="muñecoSutitucionTexto"><textarea name="" id="" cols="30" rows="10" placeholder="Aqui vera su texto encriptado/desencriptado"></textarea>
-            </section>
+            <div class="campitoResultado">
+                <!--espacio del resultado encriptado o desencriptado-->
+                <img src="imagenes/Muñeco.png" class="muñeco">
+            </div>
+            
+            
 
             <section class="botones"> <!--aqui van los botones del encriptador-->
-                <img src="imagenes/ButtonEncriptar.png" id="botonEncriptar">
-                <img src="imagenes/Button.Desencriptar.png" id="botonEncriptar">
+                <p id="textoBotones">Sólo minúsculas y sin acentos</p>
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
             </section>
 
         </main>

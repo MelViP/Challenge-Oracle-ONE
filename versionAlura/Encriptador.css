@@ -50,8 +50,88 @@ table {
 
 /*aqui empieza codigo css de encriptador*/
 
+/*fondo*/
+
+body{
+	background-color: #EAFAF1;
+	border-radius: 12px;
+}
+
 /*logo*/
 
 .logo{
-	align-items: center;
+	padding: 2em;
+}
+
+
+/*espacio centrado principal*/
+
+main{
+	padding:2em;
+	margin:auto;
+	text-align:center;
+}
+
+/*area de textos*/
+
+textarea{
+	border-radius: 15px;
+	border-width: 3px;
+	border-color: #C5A59B;
+}
+
+/*user ingresa texto*/
+
+.userInput{
+	padding: 10px;
+	display: left;
+}
+
+
+/*user percibe texto*/
+
+
+
+/*muñeco*/
+
+img .muñeco{
+	background-color: white;
+}
+
+
+/*botones*/
+
+main .botones{
+	padding: 2em;
+}
+
+.encriptar{
+	border-radius: 12px;
+	border-color: #00875C;
+	background-color: #00875C;
+	color: white;
+	font-size: 20px;
+	width: 20em;
+	height: 4em;
+	margin: 18px;
+}
+
+.encriptar:hover {
+    transform: scale(1.1);
+}
+
+
+.desencriptar{
+	border-radius: 12px;
+	border-color: #00875C;
+	background-color: white;
+	color: #00875C;
+	font-size: 20px;
+	width: 20em;
+	height: 4em;
+	margin: 18px;
+}
+
+.desencriptar:hover {
+    transform: scale(1.1);
 }
