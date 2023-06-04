@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <title>Encriptador Alura</title> <!--Titutlo de sitio web-->
         <link rel="stylesheet" href="Encriptador.css">
+        <link rel="stylesheet" href="Encriptador.js">
     </head>
 
     <body>
@@ -20,18 +21,20 @@
 
             <div class="campitoTexto">
                 <!--Espacio para ingresar texto por el usuario-->
-                <textarea class="userInput" id="" cols="30" rows="10" placeholder="Ingrese texto" ></textarea>
+                <textarea class="userInput" id="" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
             </div>
 
             <div class="campitoResultado">
                 <!--espacio del resultado encriptado o desencriptado-->
                 <img src="imagenes/Muñeco.png" class="muñeco">
+                <p><strong>Ningún mensaje fue encontrado.</strong>
+                <br>Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
             
             
 
             <section class="botones"> <!--aqui van los botones del encriptador-->
-                <p id="textoBotones">Sólo minúsculas y sin acentos</p>
+                <p class="textoBotones">Sólo minúsculas y sin acentos</p>
                 <button class="encriptar">Encriptar</button>
                 <button class="desencriptar">Desencriptar</button>
             </section>

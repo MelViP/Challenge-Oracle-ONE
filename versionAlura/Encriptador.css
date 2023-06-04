@@ -60,11 +60,16 @@ body{
 /*logo*/
 
 .logo{
+	display: flex;
+	align-items:flex-start;
 	padding: 2em;
 }
 
 p .logo{
-	display: inline;
+	display: inline-block;
+	align-items: center;
+	margin-left: 10px;
+	font-size: 25px;
 }
 
 header{
@@ -86,8 +91,9 @@ textarea{
 	border-radius: 15px;
 	border-width: 3px;
 	border-color: #C5A59B;
-	width: ;
-	height: ;
+	width: 38%;
+	height: 85%;
+	float: left;
 }
 
 /*user ingresa texto*/
@@ -97,10 +103,7 @@ textarea{
 	display: left;
 }
 
-/*acomodar textarea a la izq*/
-.campitoTexto{
-	display: block;
-}
+
 /*user percibe texto*/
 
 
@@ -109,10 +112,25 @@ textarea{
 
 img .muñeco{
 	background-color: white;
+	display: flex;
+	float: right;
+}
+
+/*texto de campitoResultado*/
+
+.campitoResultado p {
+	display: flex;
+	float: right;
 }
 
 
 /*botones*/
+
+p .textoBotones{
+	position: absolute;
+	right: 50%;
+	left: 50%;
+}
 
 main .botones{
 	padding: 2em;
@@ -132,7 +150,6 @@ main .botones{
 .encriptar:hover {
     transform: scale(1.1);
 }
-
 
 .desencriptar{
 	border-radius: 12px;
