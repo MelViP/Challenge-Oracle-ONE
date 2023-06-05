@@ -6,31 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptadorcito</title> <!--Titutlo de sitio web-->
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="Encriptador.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-    <header class="logo"> <!--aqui va el logotipo de Alura-->
-        <img class="logo" name="logo" alt="logotipoAlura">
+    <header class="logo"> <!--aqui va el logotipo de gatito-->
+        <img class="gatito" name="gatito" alt="Logotipo Meow" src="img/logo_cat.png">
+
+        <nav class="cajaHeader">
+            <ul>
+                <li class="tittle">Encriptador de Texto...</li>
+                <li>¿Quién soy?</li>     
+                
+            </ul>
+        </nav>
+        
+        
     </header>
 
     <main>
-        <section class="campitoTexto"> <!--Espacio para ingresar texto por el usuario-->
-            <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese texto"></textarea>
-        </section>
+            
+        <ul class="textos"> <!--Espacio para ingresar texto por el usuario-->
+            <li class="espacioTexto">
 
-        <section class="campitoResultado"> <!--espacio del resultado encriptado o desencriptado-->
-            <textarea name="" id="" cols="30" rows="10" placeholder="Aqui vera su texto encriptado/desencriptado"></textarea>
-        </section>
+                <textarea class="userInput" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
+            
+                <!--aqui van los botones del encriptador-->
+                <h1 class="textoBotones">Sólo minúsculas y sin acentos</h1>
 
-        <section class="botones"> <!--aqui van los botones del encriptador-->
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
-        </section>
+                <button class="encriptar">Encriptar</button>
 
-        <footer></footer><!--rodapie con info del web-->
+                <button class="desencriptar">Desencriptar</button>
+
+            </li>
+            
+            <li class="espacioResultado">
+                <!--espacio del resultado encriptado o desencriptado-->
+                <p style="font-weight: bold;">Ningún mensaje fue encontrado.</p>
+                <br>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+
+
+                <img src="img/muñeca.png" class="muñeca">
+
+            </li>
+            
+        </ul>
+        
     </main>
     
+    <footer>
+        <p class="Copyright">&copy 2023 Master Melcocha. Todos los derechos reservados.</p> 
+
+        <div class="linkedinEnlace">
+            <a href="https://www.linkedin.com/in/master-melany/" target="_blank">
+            <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" /></a>  
+        </div> 
+    </footer><!--rodapie con info del web-->
 
 
 </body>

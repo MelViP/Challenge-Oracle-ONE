@@ -1,0 +1,150 @@
+/*encabezado donde va el logo*/
+
+header{
+	background-color: #F08080;
+	padding: 20px 0;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
+    background: url(img/sky_header.png);
+    font-family: 'Chokokutai';
+}
+
+.gatito{
+    width: 79px;
+    position: absolute;
+    left: 15vh;
+    top: 6px;   
+}
+
+.cajaHeader{
+    width: 940px;
+    position: relative;
+    margin: 0;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav .tittle{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav li:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+/*cuerpo de la pagina*/
+
+body{
+    padding: 2em;
+}
+
+.
+
+/*ubicacion area de textos*/
+
+.textos{
+	width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+	font-size: 2em;
+    text-align: center;
+}
+
+.textos li{
+	display: inline-block;
+}
+
+textarea{
+	border-radius: 15px;
+	border-width: 6px;
+	border-style: solid;
+	border-color: #00875C;
+	font-size: 1em;
+}
+
+/*botones*/
+
+.textoBotones{
+	padding: 1em;
+}
+
+.encriptar{
+	border-radius: 12px;
+	border-color: #00875C;
+	background-color: #00875C;
+	color: white;
+	padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+	width: 40%;
+	height: 4em;
+	margin: 2px;
+}
+
+.encriptar:hover {
+    transform: scale(1.1);
+}
+
+.desencriptar{
+	border-radius: 12px;
+	border-color: #00875C;
+	background-color: white;
+	color: #00875C;
+	padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+	width: 40%;
+	height: 4em;
+	margin: 2px;
+}
+
+.desencriptar:hover {
+    transform: scale(1.1);
+}
+
+
+/*Area de resultado desencriptado o encriptado*/
+
+img .muñeco{
+	background-color: white;
+}
+
+.textos .espacioResultado {
+    box-sizing: border-box;
+    border: 5px solid #00875C;
+    border-radius: 15px;
+    padding: 3em;
+    background-color: white;
+}
+
+/*rodapie con mi informacion*/
+
+footer{
+	background-color: black;
+    background: url(img/flowers_footer.png);
+	box-sizing: border-box;
+	text-align: center;
+	padding: 1em;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.Copyright {
+    margin: 3em;
+    color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: bolder;
+    stroke: 2px black;
+}

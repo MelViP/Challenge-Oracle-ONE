@@ -54,86 +54,60 @@ table {
 
 body{
 	background-color: #EAFAF1;
-	border-radius: 12px;
-}
-
-/*logo*/
-
-.logo{
-	display: flex;
-	align-items:flex-start;
 	padding: 2em;
 }
 
-p .logo{
-	display: inline-block;
-	align-items: center;
-	margin-left: 10px;
-	font-size: 25px;
-}
+/*espacio encabezado de logo*/
 
 header{
 	background-color: #F08080;
+	padding: 3em 0;
+	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.caja{
+	width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+header .logoTitle{
+	text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+
+
 }
 
 
-/*espacio centrado principal*/
 
-main{
-	padding:2em;
-	margin:auto;
-	text-align:center;
+/*ubicacion area de textos*/
+
+.textos{
+	width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+	font-size: 2em;
+    text-align: center;
 }
 
-/*area de textos*/
+.textos li{
+	display: inline-block;
+}
 
 textarea{
 	border-radius: 15px;
-	border-width: 3px;
-	border-color: #C5A59B;
-	width: 38%;
-	height: 85%;
-	float: left;
+	border-width: 6px;
+	border-style: solid;
+	border-color: #00875C;
+	font-size: 1em;
 }
-
-/*user ingresa texto*/
-
-.userInput{
-	padding: 10px;
-	display: left;
-}
-
-
-/*user percibe texto*/
-
-
-
-/*muñeco*/
-
-img .muñeco{
-	background-color: white;
-	display: flex;
-	float: right;
-}
-
-/*texto de campitoResultado*/
-
-.campitoResultado p {
-	display: flex;
-	float: right;
-}
-
 
 /*botones*/
 
-p .textoBotones{
-	position: absolute;
-	right: 50%;
-	left: 50%;
-}
-
-main .botones{
-	padding: 2em;
+.textoBotones{
+	padding: 1em;
 }
 
 .encriptar{
@@ -141,10 +115,12 @@ main .botones{
 	border-color: #00875C;
 	background-color: #00875C;
 	color: white;
-	font-size: 20px;
-	width: 20em;
+	padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+	width: 40%;
 	height: 4em;
-	margin: 18px;
+	margin: 2px;
 }
 
 .encriptar:hover {
@@ -156,18 +132,45 @@ main .botones{
 	border-color: #00875C;
 	background-color: white;
 	color: #00875C;
-	font-size: 20px;
-	width: 20em;
+	padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+	width: 40%;
 	height: 4em;
-	margin: 18px;
+	margin: 2px;
 }
 
 .desencriptar:hover {
     transform: scale(1.1);
 }
 
+
+/*Area de resultado desencriptado o encriptado*/
+
+img .muñeco{
+	background-color: white;
+}
+
+.textos .espacioResultado {
+    box-sizing: border-box;
+    border: 5px solid #00875C;
+    border-radius: 15px;
+    padding: 3em;
+    background-color: white;
+}
+
 /*rodapie con mi informacion*/
 
 footer{
 	background-color: black;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 1em;
+	box-shadow: inset 0 0 25px rgba(145, 126, 126, 0.733);
+}
+
+.Copyright {
+    margin: 3em;
+    color: #FFFFFF;
+    font-size: 1.5em;
 }
