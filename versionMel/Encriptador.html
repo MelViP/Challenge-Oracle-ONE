@@ -1,79 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptadorcito</title> <!--Titutlo de sitio web-->
-    <link rel="stylesheet" href="reset.css/reset.css">
-    <link rel="stylesheet" href="Encriptador.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="img/logo_cat.png">
+        <title>Encriptadorcito</title> <!--Titutlo de sitio web-->
 
-</head>
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="Encriptador.css">
 
-<body>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
 
-    <header class="logo"> 
+    </head>
 
-        <nav class="cajaHeader">
-            <ul>
-                <li class="tittle">Encriptador de Texto...</li>
-                <br>
-                <li class="info"><a href="quienSoy.html">¿Quién soy?</a></li>     
+    <body>
+
+        <header class="logo"> 
+
+            <nav class="cajaHeader">
+                <ul>
+                    <li class="tittle">Encriptador de Texto...</li>
+                    <br>
+                    <li class="info"><a href="quienSoy.html">¿Quién soy?</a></li>     
+                    
+                </ul>
+            </nav>
+            
+            
+        </header>
+
+        <main>
+            
+            <ul class="espacios"> <!--Espacio para ingresar texto por el usuario-->
+
+                <li class="espacioTexto">
+
+                    <textarea class="userInput" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
+                
+                    <!--aqui van los botones del encriptador-->
+                    <h1 class="textoBotones"><img src="img/Vector.png"> Sólo minúsculas y sin acentos</h1>
+
+                    <button class="encriptar">Encriptar</button>
+
+                    <button class="desencriptar">Desencriptar</button>
+
+                </li>
+                
+                <!--espacio del resultado encriptado o desencriptado-->
+                <li class="espacioResultado">
+                    
+                    <p style="font-weight: bold;">Ningún mensaje fue encontrado.</p>
+                    <br>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    <br>
+
+                    <!--boton de copiar/muñeca deben esconderse y mostrarse cuando haya un resultado-->
+
+                    <div class="escondidas">
+                        <img src="img/muñeca.png" class="muñeca">
+                        <button class="copiar" onclick="copiar()">Copiar</button>
+                    </div>
+                    
+                </li>
                 
             </ul>
-        </nav>
-        
-        
-    </header>
-
-    <main>
-        
-        <ul class="espacios"> <!--Espacio para ingresar texto por el usuario-->
-            <li class="espacioTexto">
-
-                <textarea class="userInput" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
             
-                <!--aqui van los botones del encriptador-->
-                <h1 class="textoBotones"><img src="img/Vector.png"> Sólo minúsculas y sin acentos</h1>
-
-                <button class="encriptar">Encriptar</button>
-
-                <button class="desencriptar">Desencriptar</button>
-
-            </li>
-            
-            <li class="espacioResultado">
-                <!--espacio del resultado encriptado o desencriptado-->
-                <p style="font-weight: bold;">Ningún mensaje fue encontrado.</p>
-                <br>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
-
-
-                <img src="img/muñeca.png" class="muñeca">
-
-                <!--boton de copiar debe esconderse y mostrarse cuando haya un resultado-->
-                <button class="copiar" onclick="copiar()">Copiar</button>
-
-            </li>
-            
-        </ul>
+        </main>
         
-    </main>
-    
-    <footer>
-        <p class="Copyright">&copy 2023 Master Melcocha. Todos los derechos reservados.</p> 
+        <footer>
+            <p class="Copyright">&copy 2023 Master Melcocha. Todos los derechos reservados.</p> 
 
-        <img class="gatito" name="gatito" alt="Logotipo Meow" src="img/logo_cat.png">
-        
-    </footer><!--rodapie con info del web-->
+            <img class="gatito" name="gatito" alt="Logotipo Meow" src="img/logo_cat.png">
+            
+        </footer><!--rodapie con info del web-->
 
 
-</body>
+    </body>
+
 </html>
 <!--
 <div class="linkedinEnlace">
