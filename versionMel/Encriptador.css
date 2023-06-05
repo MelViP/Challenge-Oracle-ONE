@@ -2,34 +2,21 @@
 
 header{
 	background-color: #F08080;
-	padding: 20px 0;
+	padding: 20px;
 	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
-    background: url(img/sky_header.png);
+    background: url(img/house-header.png);
     font-family: 'Chokokutai';
 }
 
-.gatito{
-    width: 79px;
-    position: absolute;
-    left: 15vh;
-    top: 6px;   
-}
-
 .cajaHeader{
-    width: 940px;
+    width: 100%;
     position: relative;
-    margin: 0;
-}
-
-nav{
-    position: absolute;
-    top:110px;
-    right: 0;
+    margin: 0 auto;
+    align-items: center;
 }
 
 nav li{
-    display: inline;
-    margin: 0 0 0 15px;
+    font-size: 2em;
 }
 
 nav .tittle{
@@ -40,40 +27,53 @@ nav .tittle{
     text-decoration: none;
 }
 
-nav li:hover{
+nav .info:hover{
     color: #C78C19;
-    text-decoration: underline;
+    text-decoration-color: gold;
 }
 
 /*cuerpo de la pagina*/
 
-body{
-    padding: 2em;
+body {
+    background-color: white;
+    
 }
 
-.
+
 
 /*ubicacion area de textos*/
 
-.textos{
-	width: 100%;
-    margin: 0 auto;
-    padding: 1em;
-	font-size: 2em;
+.espacios{
+	display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    padding: 2%;
+    font-size: 1.5em;
+}
+
+.espacios li{
+    float: left;
     text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+
 }
 
-.textos li{
-	display: inline-block;
+textarea {
+    border-color: white;
+    font-size: 1.5em;
+    float: left;
+    width: 100%;
+    height: 60%;
 }
 
-textarea{
-	border-radius: 15px;
-	border-width: 6px;
-	border-style: solid;
-	border-color: #00875C;
-	font-size: 1em;
+textarea:focus {
+    outline: none;
 }
+  
+
 
 /*botones*/
 
@@ -81,53 +81,55 @@ textarea{
 	padding: 1em;
 }
 
+button{
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+	width: 50%;
+    height: 10%;
+	margin: 2%;
+    border-radius: 15%;
+}
+
 .encriptar{
-	border-radius: 12px;
 	border-color: #00875C;
 	background-color: #00875C;
 	color: white;
-	padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-	width: 40%;
-	height: 4em;
-	margin: 2px;
+	
 }
 
-.encriptar:hover {
-    transform: scale(1.1);
-}
-
-.desencriptar{
-	border-radius: 12px;
+.desencriptar .copiar{
 	border-color: #00875C;
-	background-color: white;
+	background-color: lighten(#00875C, 30%);
 	color: #00875C;
-	padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-	width: 40%;
-	height: 4em;
-	margin: 2px;
 }
 
-.desencriptar:hover {
+button:hover {
     transform: scale(1.1);
 }
 
 
 /*Area de resultado desencriptado o encriptado*/
 
-img .muñeco{
+.muñeca{
 	background-color: white;
+    /*width: 200px;*/
 }
 
-.textos .espacioResultado {
+.espacioResultado {
     box-sizing: border-box;
-    border: 5px solid #00875C;
     border-radius: 15px;
     padding: 3em;
     background-color: white;
+
+    float: right;
+    width: 35%;
+    height: 70%;
+    
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 50px 100px -40px #B695C0
+
 }
 
 /*rodapie con mi informacion*/
@@ -137,14 +139,40 @@ footer{
     background: url(img/flowers_footer.png);
 	box-sizing: border-box;
 	text-align: center;
-	padding: 1em;
+	padding: 50px;
 	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .Copyright {
-    margin: 3em;
-    color: #FFFFFF;
+    margin: 1em;
+    color: black;
     font-size: 1.5em;
     font-weight: bolder;
     stroke: 2px black;
 }
+
+.gatito{
+    width: 60px;
+    outline: 2px solid transparent;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/*Haciendo la pag responsiva*/
+
+header {
+    height: 100px; /* Establece una altura inicial para el header */
+  }
+  
+  @media screen and (max-width: 768px) {
+    header {
+      height: 150px; /* Aumenta la altura del header para dispositivos con un ancho máximo de 768px */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    header {
+      height: 200px; /* Aumenta la altura del header para dispositivos con un ancho máximo de 480px */
+    }
+  }
+  
