@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    <script src="Encriptador.js"></script>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,41 +35,43 @@
         </header>
 
         <main>
-            
-            <ul class="espacios"> <!--Espacio para ingresar texto por el usuario-->
+            <!--Espacio para ingresar texto por el usuario-->
 
-                <li class="espacioTexto">
+            <section class="espacioTexto">
 
-                    <textarea class="userInput" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
+                <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
                 
-                    <!--aqui van los botones del encriptador-->
-                    <h1 class="textoBotones"><img src="img/Vector.png"> Sólo minúsculas y sin acentos</h1>
+                <div>
+                    <h6 class="infoTexto"><img src="img/Vector.png"> Sólo minúsculas y sin acentos</h6>
+                </div>
 
-                    <button class="encriptar">Encriptar</button>
-
-                    <button class="desencriptar">Desencriptar</button>
-
-                </li>
+                <!--aqui van los botones del encriptador-->
                 
-                <!--espacio del resultado encriptado o desencriptado-->
-                <li class="espacioResultado">
+                <div class="botones">
+                    <button class="btn-encriptar">Encriptar</button>
                     
-                    <p style="font-weight: bold;">Ningún mensaje fue encontrado.</p>
-                    <br>
+                    <button class="btn-desencriptar">Desencriptar</button>
+                </div>
+
+            </section>
+                
+            <!--espacio del resultado encriptado o desencriptado-->
+            <section class="espacioResultado">
+                    
+                <div class="textoResultado">
+                    <h3 style="font-weight: bold;">Ningún mensaje fue encontrado.</h3>
                     <p>Ingresa el texto que desees encriptar o desencriptar</p>
-                    <br>
-
-                    <!--boton de copiar/muñeca deben esconderse y mostrarse cuando haya un resultado-->
-
-                    <div class="escondidas">
-                        <img src="img/muñeca.png" class="muñeca">
-                        <button class="copiar" onclick="copiar()">Copiar</button>
-                    </div>
-                    
-                </li>
+                </div>
                 
-            </ul>
-            
+                <textarea class="resultado" cols="20" rows="10"></textarea>
+                
+                <!--boton de copiar debe esconderse y mostrarse cuando haya un resultado-->
+                <div class="btn-copiar">
+                    <button class="copiar">Copiar</button>
+                </div>
+
+            </section>
+ 
         </main>
         
         <footer>
