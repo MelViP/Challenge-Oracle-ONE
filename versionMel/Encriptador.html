@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-    <script src="Encriptador.js"></script>
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,7 +38,7 @@
 
             <section class="espacioTexto">
 
-                <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
+                <textarea class="input" cols="30" rows="10" placeholder="Ingrese texto aquí" ></textarea>
                 
                 <div>
                     <h6 class="infoTexto"><img src="img/Vector.png"> Sólo minúsculas y sin acentos</h6>
@@ -48,7 +47,7 @@
                 <!--aqui van los botones del encriptador-->
                 
                 <div class="botones">
-                    <button class="btn-encriptar">Encriptar</button>
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
                     
                     <button class="btn-desencriptar">Desencriptar</button>
                 </div>
@@ -63,7 +62,7 @@
                     <p>Ingresa el texto que desees encriptar o desencriptar</p>
                 </div>
                 
-                <textarea class="resultado" cols="20" rows="10"></textarea>
+                <textarea class="output" cols="20" rows="10"></textarea>
                 
                 <!--boton de copiar debe esconderse y mostrarse cuando haya un resultado-->
                 <div class="btn-copiar">
@@ -73,6 +72,8 @@
             </section>
  
         </main>
+
+        <script src="Encriptador.js"></script>
         
         <footer>
             <p class="Copyright">&copy 2023 Master Melcocha. Todos los derechos reservados.</p> 
