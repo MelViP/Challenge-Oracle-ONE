@@ -69,3 +69,15 @@ function desencriptar(stringDesencriptado) {
   return stringDesencriptado;
 }
 
+//COPIAR AL PORTAPAPELES
+
+//llamar variable del boton copiar
+
+const botonCopiar = document.querySelector('.copiar');
+
+//llamar el textarea del texto resultado
+
+const textarea = document.querySelector('.output');
+
+
+
