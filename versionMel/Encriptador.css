@@ -142,7 +142,7 @@ button{
 
 .btn-desencriptar{
 	border-color: #00875C;
-	background-color: lighten(#00875C, 30%);
+    background-color: rgba(0, 135, 92, 0.2); /* Ajusta el último valor para cambiar la opacidad */
 	color: #00875C;
 }
 
@@ -152,9 +152,9 @@ button:hover {
 
 .copiar{
     border-color: #00875C;
-	background-color: lighten(#00875C, 30%);
+	background-color: rgba(0, 135, 92, 0.2);
 	color: #00875C;
-    width: 40%;
+    
 }
 
 /*rodapie con mi informacion*/
