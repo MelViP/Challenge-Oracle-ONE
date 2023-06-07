@@ -26,6 +26,10 @@ function btnEncriptar() {
     //hacer que boton copiar apareza
     const copiarBoton = document.getElementById("copiar");
     copiarBoton.classList.remove("oculto");
+
+    // Mostrar el botón reiniciar
+    const reiniciarBoton = document.getElementById("reiniciar");
+    reiniciarBoton.classList.remove("oculto");
 }
 
 //funcion para encriptar el texto input
@@ -66,6 +70,10 @@ function btnDesencriptar() {
     //hacer que boton copiar apareza
     const copiarBoton = document.getElementById("copiar");
     copiarBoton.classList.remove("oculto");
+
+    // Mostrar el botón reiniciar
+    const reiniciarBoton = document.getElementById("reiniciar");
+    reiniciarBoton.classList.remove("oculto");
     
 }
 
@@ -99,4 +107,13 @@ function copiarAlPortapapeles() {
     const copiarBoton = document.getElementById("copiar");
     copiarBoton.textContent = "Copiado";
 }
-  
+
+
+//boton de recargar pagina
+
+const reiniciarBoton = document.getElementById("reiniciar");
+reiniciarBoton.addEventListener("click", reiniciarPagina);
+
+function reiniciarPagina() {
+  location.reload(); // Recargar la página
+}
