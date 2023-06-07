@@ -57,9 +57,9 @@ var llavesDesencriptado = [["enter", "e"], ["imes", "i"], ["ai", "a"], ["ober", 
 //evento para que al click en boton encriptar la funcion encriptar ocurra
 
 function btnDesencriptar() {
-    const textoDesencriptado = desencriptar(resultado.value); //cambiando funcion para que desencripte resultado de encriptacion
+    const textoDesencriptado = desencriptar(textoResultado.value, resultado.value); //cambiando funcion para que desencripte resultado de encriptacion
     resultado.value = textoDesencriptado;
-  
+      
     textArea.value = ""; //limpiar campo cuando aparece resultado encriptado
     resultado.style.backgroundImage = "none";
 
