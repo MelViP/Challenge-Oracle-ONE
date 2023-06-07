@@ -10,6 +10,7 @@ header{
 	padding: 20px;
     height: fit-content;
 	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
+    
     background: url(img/house-header.png);
     font-family: 'Chokokutai';
 }
@@ -36,6 +37,8 @@ nav .tittle{
     color: #000000;
     font-weight: bold;
     font-size: 22px;
+
+    text-shadow: 3px 3px 6px white;
 }
 
 nav .Regresar:hover{
@@ -187,6 +190,14 @@ footer{
 	box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
+footer .info{
+    margin: 1%;
+}
+
+footer .linkedin{
+    margin-right: 1em;
+}
+
 .Copyright {
     margin: 1em;
     color: black;
@@ -214,10 +225,17 @@ footer{
   
 @media screen and (max-width: 480px) {
     header {
-      height: 120px; /* Aumenta la altura del header para dispositivos con un ancho máximo de 480px */
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 12px; /* Aumenta la altura del header para dispositivos con un ancho máximo de 480px */
     }
     *{
         font-size: 1em;
+    }
+    footer .info{
+        margin-top: 2%;
+        display: flex;
+        
     }
     .gatito{
         width: 45px;
