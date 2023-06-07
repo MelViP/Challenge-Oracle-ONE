@@ -80,4 +80,23 @@ const botonCopiar = document.querySelector('.copiar');
 const textarea = document.querySelector('.output');
 
 
-
+function portapapeles() {
+    try {
+      // Seleccionar el contenido del textarea
+      const textarea = document.getElementById('myTextarea');
+      textarea.select();
+  
+      // Copiar el texto al portapapeles
+      const exito = document.execCommand('copy');
+  
+      // Verificar si la copia fue exitosa
+      if (exito) {
+        console.log('Texto copiado al portapapeles');
+      } else {
+        console.error('Error al copiar al portapapeles');
+      }
+    } catch (error) {
+      console.error('Error al copiar al portapapeles:', error);
+    }
+  }
+  
