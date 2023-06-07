@@ -102,6 +102,11 @@ textarea:focus{outline: none;}
 
 }
 
+.oculto {
+    display: none;
+}
+
+
 .output{
     background: white;
     background: url(img/muñeca.png);
@@ -112,7 +117,7 @@ textarea:focus{outline: none;}
     border: none;
     border-radius: 25px;
     color: black;
-    background-position: center
+    background-position: center;
 }
 
 
@@ -136,7 +141,7 @@ button{
 	border-color: #00875C;
 	background-color: #00875C;
 	color: white;
-    text-align: ;
+    text-align: center;
 	
 }
 
@@ -150,10 +155,11 @@ button:hover {
     transform: scale(1.1);
 }
 
-.copiar{
+.botones #copiar{
     border-color: #00875C;
 	background-color: rgba(0, 135, 92, 0.2);
 	color: #00875C;
+    width: auto;
     
 }
 
@@ -173,7 +179,7 @@ footer{
     color: black;
     font-size: 1.5em;
     font-weight: bolder;
-    text-shadow: white;
+    text-shadow: 3px 3px 6px white;
 }
 
 .gatito{

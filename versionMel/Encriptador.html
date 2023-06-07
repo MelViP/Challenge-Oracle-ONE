@@ -10,8 +10,8 @@
 
         <link rel="stylesheet" href="reset.css/reset.css">
         <link rel="stylesheet" href="Encriptador.css">
-
-            <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chokokutai&display=swap" rel="stylesheet">
 
@@ -25,7 +25,14 @@
                 <ul>
                     <li class="tittle">Encriptador de Texto...</li>
                     <br>
-                    <li class="info"><a href="quienSoy.html">¿Quién soy?</a></li>     
+                    <li class="info">
+                        <a href="https://www.linkedin.com/in/master-melany/" target="blank">
+                            <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+                        </a>
+                        <a href="https://github.com/MelViP" target="_blank">
+                            <img src="https://img.shields.io/badge/github-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white" alt="github" style="margin-bottom: 5px;" />
+                        </a>
+                     </li>     
                     
                 </ul>
             </nav>
@@ -57,7 +64,7 @@
             <!--espacio del resultado encriptado o desencriptado-->
             <section class="espacioResultado">
                     
-                <div class="descripcionResultado">
+                <div class="descripcionResultado" id="textoResultado">
                     <h3 style="font-weight: bold;">Ningún mensaje fue encontrado.</h3>
                     <p>Ingresa el texto que desees encriptar o desencriptar</p>
                 </div>
@@ -65,16 +72,16 @@
                 <textarea class="output" cols="20" rows="10"></textarea>
                 
                 <!--boton de copiar debe esconderse y mostrarse cuando haya un resultado-->
-                <div class="btn-copiar">
-                    <button class="copiar" onclick="portapapeles()">Copiar</button>
+                <div class="botones">
+                    <button id="copiar" class="oculto">Copiar</button>
                 </div>
+                    
 
             </section>
  
         </main>
-
-        <script type="Ja" src="Encriptador.js"></script>
         
+
         <footer>
             <p class="Copyright">&copy 2023 Master Melcocha. Todos los derechos reservados.</p> 
 
@@ -82,12 +89,11 @@
             
         </footer><!--rodapie con info del web-->
 
-
+    <script src="Encriptador.js"></script>
     </body>
 
 </html>
 <!--
 <div class="linkedinEnlace">
-    <a href="https://www.linkedin.com/in/master-melany/" target="_blank">
-    <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" /></a>  
+    
 </div> -->
