@@ -196,9 +196,8 @@ footer{
 }
 
 .gatito{
-    width: 5%;
-    outline: 2px solid transparent;
-    
+    width: 6%;
+    outline: 2px solid transparent;    
 }
 
 /*Haciendo la pag responsiva*/
@@ -219,6 +218,12 @@ footer{
     }
     *{
         font-size: 1em;
+    }
+    .gatito{
+        width: 45px;
+        outline: 2px solid transparent;    
+    }
+    
     }
 }
 
